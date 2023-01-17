@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Understanding the display property</h2>
+
+    <p>
+      The display property does two things. The first thing it does is determine
+      if the box it is applied to acts as inline or block.
+    </p>
+
+    <code> .my-element { display: inline; } </code>
+
+    <p>
+      Inline elements behave like words in a sentence. They sit next to each
+      other in the inline direction. Elements such as `span` and `strong`, which
+      are typically used to style pieces of text within containing elements like
+      a `p` (paragraph), are inline by default. They also preserve surrounding
+      whitespace.
+    </p>
+
+    <p>
+      You can't set an explicit width and height on inline elements. Any block
+      level margin and padding will be ignored by the surrounding elements.
+    </p>
+
+    <h2>Flexbox</h2>
+
+    <p>
+      There are two main layout mechanisms that create layout rules for multiple
+      elements, flexbox and grid. They share similarities, but are designed to
+      solve different layout problems.
+    </p>
+
+    <div class="flex" style="width: 200px">
+      <div class="box">I am sat next to a sibling element</div>
+      <div class="box">I am sat next to a sibling element</div>
+    </div>
+
+    <p>
+      Items will stay on the same axis and not wrap when they run out of space.
+      Instead they will try to squash onto the same line as each other. This
+      behaviour can be changed using the align-items, justify-content and
+      flex-wrap properties.
+    </p>
+
+    <p>
+      Flexbox also converts the child elements to be flex items, which means you
+      can write rules on how they behave inside a flex container. You can change
+      alignment, order and justification on an individual item. You can also
+      change how it shrinks or grows using the flex property.
+    </p>
+
+    <h2>Grid</h2>
+
+    <p>
+      Grid is similar in a lot of ways to flexbox, but it is designed to control
+      multi-axis layouts instead of single-axis layouts (vertical or horizontal
+      space).
+    </p>
+
+    <div class="my-element">
+      <div class="box">Item 1</div>
+      <div class="box">Item 2</div>
+      <div class="box">Item 3</div>
+      <div class="box">Item 4</div>
+      <div class="box">Item 5</div>
+      <div class="box">Item 6</div>
+      <div class="box">Item 7</div>
+      <div class="box">Item 8</div>
+    </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    padding: 2em;
+}
+
+.flex {
+    display: flex;
+}
+
+// lets try using this flex direction on the box container
+.flex-col {
+    flex-direction: column;
+}
+
+.box {
+    width: 90px;
+    height: 110px;
+    background-color: #ccc;
+    margin: 1em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.test-element div {
+ 	flex: 1 0 auto;
+}
+
+// the above is the same as
+.test-element div {
+ 	flex: 1;
+ 	flex-basis: 0;
+ 	flex-grow: auto;
+}
+
+.my-element {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}

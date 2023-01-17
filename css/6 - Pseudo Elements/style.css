@@ -1,0 +1,48 @@
+body {
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.container-1 p:first-of-type::first-letter {
+  color: #0c55ff;
+  float: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  line-height: 1;
+  margin-inline-end: 0.2rem;
+}
+
+
+.container-1 article {
+  display: flow-root;
+}
+
+.container-1 article > * + * {
+  margin-top: 1em;
+}
+
+.container-2::before {
+  content: "before";
+  display: block;
+}
+
+.container-2::after {
+  content: "after";
+  display: block;
+}
+
+.container-3 ul li:nth-child(even){
+    color: red;
+}
+
+.container-3 ul li:nth-child(odd){
+    color: blue;
+}

@@ -1,0 +1,82 @@
+/* Presentational styles */
+
+// This is a html element selector
+body {
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+// This is id selector this
+#test {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a class selector
+.test {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a tag selector
+p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a attribute selector
+a[href^="http://"] {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a pseudo-class selector
+a:hover {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a pseudo-element selector
+p::first-letter {
+    background-color: #eee;
+    padding: 1em;
+}
+// This is a universal selector
+* {
+    box-sizing: border-box;
+}
+
+// This is a group selector
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+// This is a descendant selector
+div p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a child selector
+div > p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a sibling selector
+p ~ p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a adjacent sibling selector
+p + p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+// This is a negation selector
+p:not(.test) {
+    background-color: #eee;
+    padding: 1em;
+}

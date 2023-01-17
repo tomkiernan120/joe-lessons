@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  color: #f4f1f1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  /* default background colour blue */
+}
+
+/* this is how we define media queries in css */
+/* The below is saying browsers greater than 600px should use these rules */
+@media (min-width: 600px) {
+    .container {
+        background: red;
+    }
+}
+
+/* The below is saying browsers greater than 900px should use these rules */
+@media (max-width: 200px) {
+    .container {
+        background: green;
+    }
+}
