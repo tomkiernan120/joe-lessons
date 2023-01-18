@@ -9,6 +9,8 @@ function Test() {
     echo $x;
 }
 
+Test();
+
 // This will work as the variable is in scope
 function Test2() {
     $y = "Foo";
@@ -21,3 +23,9 @@ function Test3() {
     global $x;
     echo $x;
 }
+
+function Test4($variable) {
+    echo $variable;
+}
+
+Test4($x);

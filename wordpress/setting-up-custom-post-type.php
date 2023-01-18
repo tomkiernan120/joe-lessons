@@ -33,6 +33,5 @@ function create_post_type() {
         // 'rest_controller_class' => 'WP_REST_Posts_Controller',
         // 'show_in_graphql' => true,
         // 'graphql_single_name' => 'product',
-        
     ]);
 }
