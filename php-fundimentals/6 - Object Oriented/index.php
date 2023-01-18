@@ -27,7 +27,7 @@ $person = new Person("Tom");
 
 // below is an example of calling a method on an object
 // what do you think the output will be?
-$person->sayName();
+// $person->sayName();
 
 
 // below try instantiating another object and calling a method on it
@@ -40,6 +40,19 @@ $person->sayName();
 
 // below is an example of inheritance
 class Student extends Person {
+
+    public $firstname;
+    public $lastname;
+
+    public function __construct($name) {
+
+        $this->firstname = explode(" ", $name)[0];
+        $this->lastname = explode(" ", $name)[1];
+
+        // below is an example of calling the parent constructor
+        parent::__construct($name);
+    }
+
     // below is an example of overriding a method
     // if a function has the same name as a function in the parent class it overwrites it
     public function sayHello() {
@@ -48,12 +61,16 @@ class Student extends Person {
 }
 
 // below is an example of instantiating a student object
-$student = new Student("Bob");
+$student = new Student("Bob smith");
+
+echo "<pre>";
+var_dump($student);
+echo "</pre>";
 
 // below is an example of calling a method on the student object
 // what do you think the output will be?
-$student->sayHello();
+// $student->sayHello();
 
 // below we are call the sayName method on the student object
 // what do you think the output will be?
-$student->sayName();
+// $student->sayName();

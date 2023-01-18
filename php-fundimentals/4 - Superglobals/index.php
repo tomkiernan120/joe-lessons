@@ -17,9 +17,19 @@
 
 // $_COOKIE
 // this is an array that contains information about the cookies that have been set
+// set a cookie
+setcookie("name", "value", time() + 3600, "/");
+
 
 // $_SESSION
 // this is an array that contains information about the session
+
+// start session
+session_start();
+
+// set session variable
+$_SESSION["name"] = "value";
+
 
 // $_REQUEST
 // this is an array that contains information about the request
