@@ -45,7 +45,6 @@ class Student extends Person {
     public $lastname;
 
     public function __construct($name) {
-
         $this->firstname = explode(" ", $name)[0];
         $this->lastname = explode(" ", $name)[1];
 
@@ -56,7 +55,7 @@ class Student extends Person {
     // below is an example of overriding a method
     // if a function has the same name as a function in the parent class it overwrites it
     public function sayHello() {
-        echo "Hello from a student";
+        echo parent::sayHello();
     }
 }
 
